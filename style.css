@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace;  /* Coder aesthetic with monospace font */
+    background-color: #000000;  /* Pure black background */
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal scroll due to glow effects */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #111;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #00ffcc; /* Soft blue neon glow */
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00ccff;  /* Neon blue for the header */
+    text-shadow: 0px 0px 15px #00ccff; /* Blue neon glow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff00ff;  /* Neon purple for links */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ccff;  /* Switch to neon blue on hover */
+    text-shadow: 0px 0px 10px #00ccff;  /* Blue neon glow effect */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #111;  /* Dark background for content */
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #ff00ff;  /* Purple neon box shadow */
+    color: #fff;
+}
+
+h2 {
+    color: #ff00ff;  /* Bright purple for subheaders */
+    text-shadow: 0px 0px 12px #ff00ff;  /* Purple neon glow */
+    font-size: 2.2rem;
+}
+
+p, .contact-info ul li, .games-list ul li {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-shadow: 0px 0px 8px #444;  /* Subtle dark glow for text */
+}
+
+/* Lists */
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 10px #ff00ff;  /* Neon purple glow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #999;
+    text-shadow: 0px 0px 8px #444;
+}
+
+/* Neon Borders and Glows */
+.intro, .contact-info, .games-list {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    background-clip: padding-box;
+    background: linear-gradient(to right, #00ffcc, #ff00ff); /* Neon gradient border */
+    box-shadow: 0px 0px 15px #00ffcc, 0px 0px 25px #ff00ff; /* Neon glow */
+}
+
+/* Glowing Animations for Fun */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0px 0px 8px #ff00ff, 0px 0px 20px #00ccff;
+    }
+    50% {
+        text-shadow: 0px 0px 18px #ff00ff, 0px 0px 30px #00ccff;
+    }
+    100% {
+        text-shadow: 0px 0px 8px #ff00ff, 0px 0px 20px #00ccff;
+    }
+}
+
+h1, h2 {
+    animation: neon-glow 2s infinite alternate;  /* Pulsating neon effect */
+}
